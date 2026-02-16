@@ -8,6 +8,8 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import { useRecipeMatcher } from '../hooks/useRecipes';
 import { useUser } from '../context/UserContext';
 import type { MatchedRecipe } from '../types';
+import { Link } from "react-router-dom";
+
 
 const Home: React.FC = () => {
   const [ingredients, setIngredients] = useState<string[]>([]);
@@ -109,13 +111,13 @@ const Home: React.FC = () => {
 
                 {/* View All Button */}
                 <div className="text-center mt-12">
-                  <a
-                    href="/recipes"
+                  <Link
+                    to="/recipes"
                     className="inline-flex items-center space-x-2 text-primary-600 font-medium hover:text-primary-700 transition-colors"
                   >
                     <span>View All Recipes</span>
                     <ArrowRight className="w-5 h-5" />
-                  </a>
+                  </Link>
                 </div>
               </>
             )}
@@ -132,9 +134,9 @@ const Home: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Try adding more common ingredients or browse all our recipes.
                 </p>
-                <a href="/recipes" className="btn-primary">
+                <Link to="/recipes" className="btn-primary">
                   Browse All Recipes
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -198,13 +200,13 @@ const Home: React.FC = () => {
             <p className="text-white/90 text-lg mb-8 max-w-xl mx-auto">
               Browse our collection of 25+ delicious recipes from around the world.
             </p>
-            <a
-              href="/recipes"
-              className="inline-flex items-center space-x-2 bg-white text-primary-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors"
-            >
-              <span>Explore All Recipes</span>
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <Link
+                to="/recipes"
+                className="inline-flex items-center space-x-2 bg-white text-primary-600 px-8 py-4 rounded-xl"
+              >
+                <span>Explore All Recipes</span>
+                <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
