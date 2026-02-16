@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SlidersHorizontal, X, ChevronDown } from 'lucide-react';
 import { recipeApi } from '../services/api';
-import { DIFFICULTY_LEVELS, DIETARY_TAGS } from '../types';
+import { DIFFICULTY_LEVELS, } from '../types';
 
 interface FilterPanelProps {
   filters: {
@@ -18,7 +18,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ filters, onFilterChange }) =>
   const [isOpen, setIsOpen] = useState(false);
   const [cuisines, setCuisines] = useState<string[]>([]);
   const [availableDietaryTags, setAvailableDietaryTags] = useState<string[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchFilterData = async () => {

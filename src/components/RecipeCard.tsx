@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Users, Star, Heart, Flame, ChefHat } from 'lucide-react';
+import { Clock, Users, Star, Heart, Flame,} from 'lucide-react';
 import { useUser } from '../context/UserContext';
 import type { Recipe, MatchedRecipe } from '../types';
 import {

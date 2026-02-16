@@ -11,8 +11,8 @@ import {
   Share2,
   Printer,
   Check,
-  AlertCircle,
-  Sparkles,
+  // AlertCircle,
+  // Sparkles,
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -24,7 +24,7 @@ import {
   getDifficultyColor,
   getDietaryTagColor,
   getCuisineEmoji,
-  generateStars,
+  //generateStars,
   calculatePerServing,
   getIngredientIcon,
 } from '../utils/helpers';
@@ -130,7 +130,7 @@ const RecipeDetail: React.FC = () => {
     recipe.servings,
     currentServings
   );
-  const stars = generateStars(recipe.averageRating);
+  //const stars = generateStars(recipe.averageRating);
   const totalTime = recipe.prepTime + recipe.cookTime;
 
   return (

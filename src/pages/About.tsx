@@ -1,30 +1,30 @@
 import React from 'react';
-import { ChefHat, Code2, Database, Sparkles, Github, ExternalLink } from 'lucide-react';
+import { ChefHat, } from 'lucide-react';
 
 const About: React.FC = () => {
-  const techStack = [
-    {
-      category: 'Frontend',
-      icon: Code2,
-      items: ['React 18', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router'],
-    },
-    {
-      category: 'Backend',
-      icon: Database,
-      items: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'TypeScript'],
-    },
-    {
-      category: 'Features',
-      icon: Sparkles,
-      items: [
-        'Ingredient-based recipe matching',
-        'Image recognition (simulated)',
-        'Dietary preference filtering',
-        'Favorites & ratings',
-        'Substitution suggestions',
-      ],
-    },
-  ];
+  // const techStack = [
+  //   {
+  //     category: 'Frontend',
+  //     icon: Code2,
+  //     items: ['React 18', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router'],
+  //   },
+  //   {
+  //     category: 'Backend',
+  //     icon: Database,
+  //     items: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'TypeScript'],
+  //   },
+  //   {
+  //     category: 'Features',
+  //     icon: Sparkles,
+  //     items: [
+  //       'Ingredient-based recipe matching',
+  //       'Image recognition (simulated)',
+  //       'Dietary preference filtering',
+  //       'Favorites & ratings',
+  //       'Substitution suggestions',
+  //     ],
+  //   },
+  // ];
 
   const features = [
     {

@@ -14,11 +14,11 @@ const api = axios.create({
 // Request interceptor
 api.interceptors.request.use(
   (config) => {
-    console.log(`🚀 API Request: ${config.method?.toUpperCase()} ${config.url}`);
+    console.log(`API Request: ${config.method?.toUpperCase()} ${config.url}`);
     return config;
   },
   (error) => {
-    console.error('❌ Request Error:', error);
+    console.error(' Request Error:', error);
     return Promise.reject(error);
   }
 );
@@ -26,11 +26,11 @@ api.interceptors.request.use(
 // Response interceptor
 api.interceptors.response.use(
   (response) => {
-    console.log(`✅ API Response: ${response.status} ${response.config.url}`);
+    console.log(` API Response: ${response.status} ${response.config.url}`);
     return response;
   },
   (error: AxiosError) => {
-    console.error('❌ Response Error:', error.response?.status, error.message);
+    console.error(' Response Error:', error.response?.status, error.message);
     return Promise.reject(error);
   }
 );
